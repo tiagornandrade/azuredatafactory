@@ -1,0 +1,270 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2246fc18-46f1-4e79-8c09-85169941155f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SEEB DW</ID>
+  <Name>SEEB DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>SEEB DW</DataSourceID>
+  <Schema>
+    <xs:schema id="SEEB_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="SEEB_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="94c842c8-f463-47f0-a08f-cb5be147ec5c">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_ATIVIDADE" msprop:design-time-name="940e0b4b-81ef-4773-9f63-7dba55373458" msprop:DbTableName="DIM_ATIVIDADE" msprop:FriendlyName="DIM_ATIVIDADE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DIAT_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ec28e75d-e9c8-424b-8b97-9c7e04dc560f" msprop:DbColumnName="DIAT_ID" msprop:FriendlyName="DIAT_ID" type="xs:int" />
+                  <xs:element name="DIAT_CODIGO_ATIVIDADE" msprop:design-time-name="9a2d3f4f-d97a-476c-b729-f128561ffc62" msprop:DbColumnName="DIAT_CODIGO_ATIVIDADE" msprop:FriendlyName="DIAT_CODIGO_ATIVIDADE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIAT_NOME_ATIVIDADE" msprop:design-time-name="ad453034-57aa-49af-b4d1-5f772e7328af" msprop:DbColumnName="DIAT_NOME_ATIVIDADE" msprop:FriendlyName="DIAT_NOME_ATIVIDADE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIAT_ID_ETL" msprop:design-time-name="cc5627fb-0a00-40f9-8084-f1268774cbc4" msprop:DbColumnName="DIAT_ID_ETL" msprop:FriendlyName="DIAT_ID_ETL" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIAT_VERSAO_ETL" msprop:design-time-name="5cdbf237-16dd-4bb0-8131-593c90c47765" msprop:DbColumnName="DIAT_VERSAO_ETL" msprop:FriendlyName="DIAT_VERSAO_ETL" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIAT_DTC_INICIO" msprop:design-time-name="935a1975-db3f-4fdb-9807-704278f9194d" msprop:DbColumnName="DIAT_DTC_INICIO" msprop:FriendlyName="DIAT_DTC_INICIO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DIAT_DTC_FIM" msprop:design-time-name="decb969b-6ee9-4468-ad2f-a290be222c6a" msprop:DbColumnName="DIAT_DTC_FIM" msprop:FriendlyName="DIAT_DTC_FIM" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_PARTICIPANTE" msprop:design-time-name="0333a954-5d28-4520-9260-59985d9fe3b7" msprop:DbTableName="DIM_PARTICIPANTE" msprop:FriendlyName="DIM_PARTICIPANTE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DIPA_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0b96115b-69d9-459a-b3dc-56dc11851daf" msprop:DbColumnName="DIPA_ID" msprop:FriendlyName="DIPA_ID" type="xs:int" />
+                  <xs:element name="DIPA_CODIGO_PARTICIPANTE" msprop:design-time-name="dc6cf9e0-3057-4c77-83e0-65d4d26d41d3" msprop:DbColumnName="DIPA_CODIGO_PARTICIPANTE" msprop:FriendlyName="DIPA_CODIGO_PARTICIPANTE" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIPA_NOME_PARTICIPANTE" msprop:design-time-name="de4945e4-c14a-44a8-a1b7-2b325ba0a8a7" msprop:DbColumnName="DIPA_NOME_PARTICIPANTE" msprop:FriendlyName="DIPA_NOME_PARTICIPANTE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIPA_ID_ETL" msprop:design-time-name="be96019f-f1da-4fdb-bcf8-c4cc79800225" msprop:DbColumnName="DIPA_ID_ETL" msprop:FriendlyName="DIPA_ID_ETL" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIPA_VERSAO_ETL" msprop:design-time-name="218b278a-75ce-4208-b784-7d0e5f397b47" msprop:DbColumnName="DIPA_VERSAO_ETL" msprop:FriendlyName="DIPA_VERSAO_ETL" type="xs:int" minOccurs="0" />
+                  <xs:element name="DIPA_DTC_INICIO" msprop:design-time-name="34d0c4a3-a6e8-4dd0-8d5a-f6d49e4df6e3" msprop:DbColumnName="DIPA_DTC_INICIO" msprop:FriendlyName="DIPA_DTC_INICIO" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DIPA_DTC_FIM" msprop:design-time-name="d8262520-6511-4573-8333-bebc6c7b4842" msprop:DbColumnName="DIPA_DTC_FIM" msprop:FriendlyName="DIPA_DTC_FIM" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TEMPO" msprop:design-time-name="da5bc629-a326-47f8-8d84-ae4fc6e85da5" msprop:DbTableName="DIM_TEMPO" msprop:FriendlyName="DIM_TEMPO" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SK_TEMPO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1cdf8d5c-149c-4a6f-9905-1eca74bd34a4" msprop:DbColumnName="SK_TEMPO" msprop:FriendlyName="SK_TEMPO" type="xs:int" />
+                  <xs:element name="DATA" msprop:design-time-name="8634f5f7-2ccf-45ab-aa2d-25ff050060ea" msprop:DbColumnName="DATA" msprop:FriendlyName="DATA" type="xs:dateTime" />
+                  <xs:element name="ANO" msprop:design-time-name="71a3ba04-9a42-4bf8-bc29-b32bef660785" msprop:DbColumnName="ANO" msprop:FriendlyName="ANO" type="xs:short" />
+                  <xs:element name="MES" msprop:design-time-name="0b453b89-84ae-4673-a938-c4e9ffcbb25e" msprop:DbColumnName="MES" msprop:FriendlyName="MES" type="xs:short" />
+                  <xs:element name="DIA" msprop:design-time-name="d546d90e-2fcb-4a39-8593-740746578d4f" msprop:DbColumnName="DIA" msprop:FriendlyName="DIA" type="xs:short" />
+                  <xs:element name="DIA_SEMANA" msprop:design-time-name="87ec8748-5ed6-45b9-9d72-2d9bf1117dc4" msprop:DbColumnName="DIA_SEMANA" msprop:FriendlyName="DIA_SEMANA" type="xs:short" />
+                  <xs:element name="DIA_ANO" msprop:design-time-name="9f7bee06-2e8f-46f1-bb4f-ffb36380f241" msprop:DbColumnName="DIA_ANO" msprop:FriendlyName="DIA_ANO" type="xs:short" />
+                  <xs:element name="ANO_BISSEXTO" msprop:design-time-name="6e94f78e-abe9-412f-9235-ff05dd4412d0" msprop:DbColumnName="ANO_BISSEXTO" msprop:FriendlyName="ANO_BISSEXTO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DIA_UTIL" msprop:design-time-name="eee29507-342d-4ecb-b064-432c72d9189e" msprop:DbColumnName="DIA_UTIL" msprop:FriendlyName="DIA_UTIL">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FIM_SEMANA" msprop:design-time-name="84874870-9280-4a46-b1b7-0b0e34110f77" msprop:DbColumnName="FIM_SEMANA" msprop:FriendlyName="FIM_SEMANA">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FERIADO" msprop:design-time-name="fb85aa19-5d1e-44a1-9800-8ea92efd793a" msprop:DbColumnName="FERIADO" msprop:FriendlyName="FERIADO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PRE_FERIADO" msprop:design-time-name="52950526-7817-4ade-97a7-913697551347" msprop:DbColumnName="PRE_FERIADO" msprop:FriendlyName="PRE_FERIADO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="POS_FERIADO" msprop:design-time-name="aae3211e-3282-4e54-a288-812a599f86c2" msprop:DbColumnName="POS_FERIADO" msprop:FriendlyName="POS_FERIADO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOME_FERIADO" msprop:design-time-name="3af43e58-b898-4787-91cb-3f8ca8a22657" msprop:DbColumnName="NOME_FERIADO" msprop:FriendlyName="NOME_FERIADO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOME_DIA_SEMANA" msprop:design-time-name="5e78dc6c-1248-489d-94f4-f0e8b425abe2" msprop:DbColumnName="NOME_DIA_SEMANA" msprop:FriendlyName="NOME_DIA_SEMANA">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOME_DIA_SEMANA_ABREV" msprop:design-time-name="ff27daeb-ec7a-4a0f-84e5-7f25e4440dbb" msprop:DbColumnName="NOME_DIA_SEMANA_ABREV" msprop:FriendlyName="NOME_DIA_SEMANA_ABREV">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOME_MES" msprop:design-time-name="f19fd61d-de90-40c1-8d41-743caa518503" msprop:DbColumnName="NOME_MES" msprop:FriendlyName="NOME_MES">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NOME_MES_ABREV" msprop:design-time-name="1fe6416c-3338-400f-a29d-b9e1d5fe1e6d" msprop:DbColumnName="NOME_MES_ABREV" msprop:FriendlyName="NOME_MES_ABREV">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="3" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="QUINZENA" msprop:design-time-name="40f54039-43f2-444c-a38a-06adf0a41c0d" msprop:DbColumnName="QUINZENA" msprop:FriendlyName="QUINZENA" type="xs:short" />
+                  <xs:element name="BIMESTRE" msprop:design-time-name="9308b666-089d-4826-95e4-02310d4acda6" msprop:DbColumnName="BIMESTRE" msprop:FriendlyName="BIMESTRE" type="xs:short" />
+                  <xs:element name="TRIMESTRE" msprop:design-time-name="cd324932-82c3-494a-9e72-d2c1e86748d2" msprop:DbColumnName="TRIMESTRE" msprop:FriendlyName="TRIMESTRE" type="xs:short" />
+                  <xs:element name="SEMESTRE" msprop:design-time-name="440c58c2-aa2d-40dc-8924-992d6d5ef112" msprop:DbColumnName="SEMESTRE" msprop:FriendlyName="SEMESTRE" type="xs:short" />
+                  <xs:element name="NR_SEMANA_MES" msprop:design-time-name="bfe0e650-7bd3-4f54-b65b-0465719c40ac" msprop:DbColumnName="NR_SEMANA_MES" msprop:FriendlyName="NR_SEMANA_MES" type="xs:short" />
+                  <xs:element name="NR_SEMANA_ANO" msprop:design-time-name="df8c75f1-5485-4f4c-b0a6-ecf54a565be0" msprop:DbColumnName="NR_SEMANA_ANO" msprop:FriendlyName="NR_SEMANA_ANO" type="xs:short" />
+                  <xs:element name="ESTACAO_ANO" msprop:design-time-name="781f145a-d250-4f12-8800-852ab9c6dc11" msprop:DbColumnName="ESTACAO_ANO" msprop:FriendlyName="ESTACAO_ANO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DATA_POR_EXTENSO" msprop:design-time-name="6e133a30-62d2-43a0-a0ad-64be4271d14b" msprop:DbColumnName="DATA_POR_EXTENSO" msprop:FriendlyName="DATA_POR_EXTENSO">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FAT_PRESENCA" msprop:design-time-name="d305e484-611f-4e0e-b0cf-06f2a3cabcfa" msprop:DbTableName="FAT_PRESENCA" msprop:FriendlyName="FAT_PRESENCA" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FAFR_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9874fa83-023f-4308-9775-f83bdad4884d" msprop:DbColumnName="FAFR_ID" msprop:FriendlyName="FAFR_ID" type="xs:int" />
+                  <xs:element name="DIPA_ID" msprop:design-time-name="3a435a2a-93c9-4766-bb71-8adf339d4ca2" msprop:DbColumnName="DIPA_ID" msprop:FriendlyName="DIPA_ID" type="xs:int" />
+                  <xs:element name="DIAT_ID" msprop:design-time-name="7bb2d488-7562-4d2f-a19a-cecc47f250e8" msprop:DbColumnName="DIAT_ID" msprop:FriendlyName="DIAT_ID" type="xs:int" />
+                  <xs:element name="SK_TEMPO" msprop:design-time-name="9aaabf15-6ac4-4f3d-873a-01bcb5d629fc" msprop:DbColumnName="SK_TEMPO" msprop:FriendlyName="SK_TEMPO" type="xs:int" />
+                  <xs:element name="FAFR_COD_ATIVIDADE" msprop:design-time-name="39403252-3a94-4c17-bf49-e5de4c35f53a" msprop:DbColumnName="FAFR_COD_ATIVIDADE" msprop:FriendlyName="FAFR_COD_ATIVIDADE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FAFR_NOME_PARTICIPANTE" msprop:design-time-name="2f613c99-55b7-44a4-a137-add343d65f6c" msprop:DbColumnName="FAFR_NOME_PARTICIPANTE" msprop:FriendlyName="FAFR_NOME_PARTICIPANTE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FAFR_DATA_ATIVIDADE" msprop:design-time-name="8e1e446b-9152-428d-9670-862de88509d8" msprop:DbColumnName="FAFR_DATA_ATIVIDADE" msprop:FriendlyName="FAFR_DATA_ATIVIDADE" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="FAFR_MES_ANO" msprop:design-time-name="9d3b51f6-e04d-4a74-a1d0-ac6b02e7765f" msprop:DbColumnName="FAFR_MES_ANO" msprop:FriendlyName="FAFR_MES_ANO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FAFR_QTD_PRESENCA" msprop:design-time-name="f598f1e7-1ea8-46d7-8792-3885cba38b23" msprop:DbColumnName="FAFR_QTD_PRESENCA" msprop:FriendlyName="FAFR_QTD_PRESENCA" type="xs:int" minOccurs="0" />
+                  <xs:element name="FAFR_QTD_AUSENCIA" msprop:design-time-name="d5543fec-cdea-4bd4-9953-28af7bc7a4c8" msprop:DbColumnName="FAFR_QTD_AUSENCIA" msprop:FriendlyName="FAFR_QTD_AUSENCIA" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ATIVIDADE" />
+          <xs:field xpath="DIAT_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_PARTICIPANTE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_PARTICIPANTE" />
+          <xs:field xpath="DIPA_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TEMPO" />
+          <xs:field xpath="SK_TEMPO" />
+        </xs:unique>
+        <xs:unique name="dbo_FAT_PRESENCA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FAT_PRESENCA" />
+          <xs:field xpath="FAFR_ID" />
+        </xs:unique>
+        <xs:keyref name="DIM_TEMPO_FAT_PRESENCA_fk" refer="dbo_DIM_TEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FAT_PRESENCA" />
+          <xs:field xpath="SK_TEMPO" />
+        </xs:keyref>
+        <xs:keyref name="DIM_PARTICIPANTE_FAT_PRESENCA_fk" refer="dbo_DIM_PARTICIPANTE_Constraint1">
+          <xs:selector xpath=".//dbo_FAT_PRESENCA" />
+          <xs:field xpath="DIPA_ID" />
+        </xs:keyref>
+        <xs:keyref name="DIM_ATIVIDADE_FAT_PRESENCA_fk" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FAT_PRESENCA" />
+          <xs:field xpath="DIAT_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <SEEB_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
