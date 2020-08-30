@@ -9,7 +9,9 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "202007-capitalbikeshare-tripdata.csv",
+				"fileSystem": "bucket-yams-lab"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
