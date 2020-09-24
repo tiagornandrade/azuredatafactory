@@ -1,0 +1,28 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"script": "source(output(\n\t\tride_id as string,\n\t\trideable_type as string,\n\t\tstarted_at as string,\n\t\tended_at as string,\n\t\tstart_station_name as string,\n\t\tstart_station_id as string,\n\t\tend_station_name as string,\n\t\tend_station_id as string,\n\t\tstart_lat as string,\n\t\tstart_lng as string,\n\t\tend_lat as string,\n\t\tend_lng as string,\n\t\tmember_casual as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tdateFormats: ['yyyy/MM/dd'],\n\ttimestampFormats: ['MM/dd/yyyy HH:mm:ss'],\n\tpreferredIntegralType: 'integer',\n\tpreferredFractionalType: 'float') ~> source1\nsource1 sink(input(\n\t\tride_id as string,\n\t\trideable_type as string,\n\t\tstarted_at as string,\n\t\tended_at as string,\n\t\tstart_station_name as string,\n\t\tstart_station_id as string,\n\t\tend_station_name as string,\n\t\tend_station_id as string,\n\t\tstart_lat as string,\n\t\tstart_lng as string,\n\t\tend_lat as string,\n\t\tend_lng as string,\n\t\tmember_casual as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}
